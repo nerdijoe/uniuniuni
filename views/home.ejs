@@ -17,9 +17,10 @@
 
 <body>
     <div class="container">
-    <h1>yo</h1>
+    <h1>Random Integers</h1>
     <%= grid %>
 
+    <h1>RGB bitmap from random integers</h1>
     <canvas id="myCanvas" width="128" height="128" style="border:1px solid #d3d3d3;">
       Your browser does not support the HTML5 canvas tag.
     </canvas>
@@ -27,14 +28,16 @@
     </div>
 
     <script>
-      var grid = [<%= grid %>];
-      var width = 128;
-      var height = 128;
-      console.log(grid);  
+      const grid = [<%= grid %>];
+      const width = 128;
+      const height = 128;
+      
       var canvas = document.getElementById('myCanvas');
       var ctx = canvas.getContext('2d');
+
       canvas.width = width;
       canvas.height = height;
+      
       var imgData = ctx.createImageData(width, height);
       imgData.data.set(grid);
       ctx.putImageData(imgData, 0, 0);

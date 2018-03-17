@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var randomController = require('../controllers/randomController')
 
-// list all users
+// get random integers
 router.get('/', randomController.getRandomNum );
 
 module.exports = router;

@@ -8,9 +8,9 @@ var index = require('./routes/index');
 var random = require('./routes/random');
 
 var app = express();
-
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+app.set('view engine', 'ejs')
 
 app.use('/', index);
 app.use('/random', random);

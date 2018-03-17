@@ -10,7 +10,12 @@ npm install
 ```
 npm start
 ```
+4. Open your browser, open this address:
+```
+http://localhost:3000/random
+```
 
+5. 🤩
 
 ## Fun with Random.org
 This challenge is programming language agnostic! Pick whichever language you're most comfortable with. Random.org is a web front-end to an atmospheric noise sensor, which can give us pretty good random numbers. It's the reverse from a noise cancelling filter, since it cancels everything BUT the noise. Weather conditions, solar flares, a full-moon can have little impact on this, since it focuses on getting the purest white noise possible from their hardware sensors. If you too think this is cool, you'd be thrilled to try our challenge:
